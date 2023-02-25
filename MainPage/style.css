@@ -1,0 +1,50 @@
+*{
+    padding:0;
+    margin:0;
+}
+.navigation
+{
+    /* outline: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(199,81,192);
+    color:azure;
+    height:90px;
+}
+.btns
+{
+    display: flex;
+    /* outline:2px solid red; */
+    width:170px;
+    justify-content: space-around;
+margin-right:50px;
+}
+.signUp
+{
+/* outline:2px solid red; */
+width:100px;
+display: flex;
+justify-content: center;
+align-items: center;
+height:25px;
+background-color: aliceblue;
+color:rgb(199,81,192) ;
+border-radius: 25px;
+}
+.mainContainer
+{
+    display:flex;
+    justify-content: space-around;
+    /* outline: 2px solid red; */
+    width:350px;
+    align-items: center;
+}
+.logo
+{
+    display:flex;
+    /* outline:2px solid red; */
+    width:125px;
+    justify-content: space-around;
+    margin-left:50px;
+}
