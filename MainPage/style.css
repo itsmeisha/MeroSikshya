@@ -31,14 +31,17 @@ height:25px;
 background-color: aliceblue;
 color:rgb(199,81,192) ;
 border-radius: 25px;
+cursor: pointer;
 }
 .mainContainer
 {
     display:flex;
     justify-content: space-around;
     /* outline: 2px solid red; */
-    width:350px;
+    width:400px;
     align-items: center;
+    cursor: pointer;
+    height:80px;
 }
 .logo
 {
@@ -47,4 +50,36 @@ border-radius: 25px;
     width:125px;
     justify-content: space-around;
     margin-left:50px;
+}
+.Home
+{
+    /* outline:2px solid red; */
+    cursor: pointer;
+}
+.dot
+{
+    background-color: aliceblue;
+    width:10px;
+    height:10px;
+    /* outline:2px solid red; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Login
+{
+    cursor: pointer;
+}
+.dot1
+{
+    /* outline:2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5px;
+}
+.active
+{
+    font-size: larger;
 }
