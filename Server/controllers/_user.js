@@ -1,12 +1,24 @@
-import { userModel } from "../.config/models";
+import { userModel } from "../.config/models.js";
 
 export const getOneUser = async (req, res) => {
   try {
-    const id = req.body.id;
+    // getting the id from the url
+    const id = req.params.id;
 
-    const user = await userModel.FindOne({ id: id });
-    res
+    // fetching the user from the db
+    const user = await userModel.findOne({ id: id });
+
+    // checking the existance of the user
+    if (!user) return res.status(404).json({ msg: "could not find the user" });
+
+    // sending the data to user
+    return res
       .status(200)
       .json({ msg: `Successfully fetched the user with id ${id}`, user: user });
-  } catch (e) {}
+  } catch (e) {
+    console.log(e);
+    return res
+      .status(500)
+      .json({ msg: "error occured while getting the user", error: e });
+  }
 };

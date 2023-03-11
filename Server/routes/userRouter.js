@@ -7,3 +7,5 @@ import { getOneUser } from "../controllers/_user.js";
 const userRouter = express.Router();
 
 userRouter.route("/:id").get(getOneUser); // to get one specific user from db
+
+export default userRouter;
