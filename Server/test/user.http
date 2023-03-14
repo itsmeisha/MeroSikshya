@@ -1,0 +1,2 @@
+#for getting all the users
+GET http://localhost:3000/api/v1/user/jadsfhh234h13dhf/ HTTP/1.1
