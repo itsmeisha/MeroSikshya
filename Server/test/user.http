@@ -1,2 +1,16 @@
 #for getting all the users
 GET http://localhost:3000/api/v1/user/jadsfhh234h13dhf/ HTTP/1.1
+
+
+###
+# for adding a new user
+POST http://localhost:3000/api/v1/user/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "user":{
+        "name": "Rameshowaran yadav",
+        "school": "Kalika ",
+        "token": "123343rdg23452v",
+    }
+}

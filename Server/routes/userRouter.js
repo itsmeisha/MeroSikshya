@@ -1,7 +1,7 @@
 import express from "express";
 
 // importing the controllers
-import { getOneUser } from "../controllers/_user.js";
+import { getOneUser, addOneUser } from "../controllers/_user.js";
 
 // declearing the user router
 const userRouter = express.Router();
