@@ -1,0 +1,15 @@
+# for getting all the users
+GET http://localhost:3000/api/v1/user/akbakjksj123/ HTTP/1.1
+
+###
+#for adding a user
+POST http://localhost:3000/api/v1/user/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "user":{
+        "token":"1223jois",
+        "name":"Mr.M",
+        "school":"KMGSS",
+    }
+}

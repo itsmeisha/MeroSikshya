@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 const userSchema= new mongoose.Schema(
     {
-        id:String,
+        token:String,
         name:String,
-        address:String,
+        school:String,
     })
 export default userSchema;
