@@ -1,5 +1,5 @@
 # for getting all the users
-GET http://localhost:3000/api/v1/user/akbakjksj123/ HTTP/1.1
+GET http://localhost:3000/api/v1/user/6421d67862ec84a3789d9e58/ HTTP/1.1
 
 ###
 #for adding a user
@@ -10,6 +10,10 @@ Content-Type: application/json
     "user":{
         "token":"1223jois",
         "name":"Mr.M",
-        "school":"KMGSS",
+        "school":"KMGSS"
     }
 }
+
+###
+#for deleting one user
+DELETE http://localhost:3000/api/v1/user/6421d67862ec84a3789d9e58/ HTTP/1.1
