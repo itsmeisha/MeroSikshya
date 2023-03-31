@@ -5,7 +5,7 @@ const postSchema = new mongoose.Schema({
   content: String,
   image: [
     {
-      url: String,
+      url: String,  
       name: String,
     },
   ],
