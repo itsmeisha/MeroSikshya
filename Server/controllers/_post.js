@@ -1,4 +1,6 @@
 import { postModel } from "../.config/models.js";
+// for parsing the file
+import multer from "multer";
 
 //getting single post
 export const getPostById = async (req, res) => {
@@ -92,4 +94,10 @@ export const getPostBySubject = async (req, res) => {
       .status(500)
       .json({ msg: `Error occured while getting the post`, error: e });
   }
+};
+
+export const uploadImage = async (req, res) => {
+  if (req.file) return res.status(200).json({ fileName: req.file.path });
+
+  return res.status(400).json({ error: "failed to upload file " });
 };
