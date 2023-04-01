@@ -28,7 +28,7 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-
+console.log(upload);
 postRouter.route("/uploadImage").post(upload.single("picture"), uploadImage);
 
 export default postRouter;

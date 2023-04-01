@@ -98,6 +98,6 @@ export const getPostBySubject = async (req, res) => {
 
 export const uploadImage = async (req, res) => {
   if (req.file) return res.status(200).json({ fileName: req.file.path });
-
+  console.log({ filestatus: req.file });
   return res.status(400).json({ error: "failed to upload file " });
 };
