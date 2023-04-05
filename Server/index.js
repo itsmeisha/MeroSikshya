@@ -13,8 +13,13 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`server is running at port ${PORT}`);
 });
+//connecting to database
 connectdb();
+
 app.use(express.json());
+
+//routers
+app.get("/",(req,res)=>{return res.status(200).send(`<h1>Welcome</h1>`)});
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/post", postRouter);
 app.use("/api/v1/answer", answerRouter);
